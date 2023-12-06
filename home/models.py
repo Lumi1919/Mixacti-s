@@ -6,7 +6,7 @@ class Apropos(models.Model):
     image = models.ImageField(max_length=255)
 
     def __str__(self):
-        return self.text
+        return self.texte
 
 
 class Galerie(models.Model):
