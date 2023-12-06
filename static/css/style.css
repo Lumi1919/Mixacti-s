@@ -1246,3 +1246,7 @@ a:focus {
 .owl-filter-bar a{
   text-align: center;
 }
+
+.detail-box p{
+  text-align: justify;
+}

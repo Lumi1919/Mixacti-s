@@ -294,12 +294,11 @@
               </div>
               <div class="detail-box">
                 <h5>
-                 Terrassement
+                 Travaux de Terrassement
                 </h5>
                 <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using L
+                  Mixacti's intervient pour le compte de particuliers et de professionnels du BTP afin de procéder à tout type de travaux de terrassement, 
+                  d'enrochement ou de démolition.
                 </p>
                 <a href="">
                   Voir plus
@@ -314,12 +313,10 @@
               </div>
               <div class="detail-box">
                 <h5>
-                  Entretien et aménagement paysager
+                  Entretien & aménagement paysager
                 </h5>
                 <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using L
+                  Mixacti's mène à bien des projets complets, intégrant les végétaux comme les matériaux et prenant en compte l'environnement et la biodiversité.
                 </p>
                 <a href="">
                   Voir plus
@@ -337,9 +334,7 @@
                   Fourniture Main d'oeuvre
                 </h5>
                 <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using L
+                  Nous mettons à votre disposition des techiniciens (conducteurs d'engins, CACES R482, ouvriers paysagistes...) avec ou sans matériel afin d'assurer la main d'oeuvre.
                 </p>
                 <a href="">
                   Voir plus
@@ -354,12 +349,10 @@
               </div>
               <div class="detail-box">
                 <h5>
-                  Services divers
+                  Autres Services Mixacti's
                 </h5>
                 <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using L
+                  Mixacti's s'appuie sur un professionnalisme qui, au-delà du savoir-faire « végétal », permet de déployer des compétences multiples. 
                 </p>
                 <a href="">
                   Voir plus
@@ -379,6 +372,7 @@
 
   <section class="about_section">
     <div class="container  ">
+      {% for element in apropos %}
       <div class="row">
         <div class="col-md-6">
           <div class="detail-box">
@@ -388,10 +382,7 @@
               </h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+              {{element.texte}}
             </p>
             <a href="">
               Voir plus
@@ -400,10 +391,10 @@
         </div>
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="static/images/about-img.jpg" alt="">
+            <img src="{{element.image.url}}" alt="">
           </div>
         </div>
-
+        {% endfor %}
       </div>
     </div>
   </section>
