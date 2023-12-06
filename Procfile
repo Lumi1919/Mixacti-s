@@ -1,0 +1,1 @@
+web: gunicorn mixactis_main.wsgi --log-file -
